@@ -20,7 +20,7 @@ app.config['TESTING'] = False
 app.config['MAIL_SERVER']='smtp.mailtrap.io'
 
 # depends on the email client provider
-app.config['MAIL_PORT'] = 2525 # change this based on the email client, gmail has 465
+app.config['MAIL_PORT'] = 2525 # change this based on the email client, e.g. gmail has 465
 
 # for security and encryption
 app.config['MAIL_USE_TLS'] = True
@@ -53,7 +53,7 @@ mail = Mail(app)
 
 @app.route('/')
 def index():
-     msg = Message('Hello from the flask mail app', sender= os.getenv("SECRET_SENDER"), recipients = [os.getenv("SECRET_SENDER")]) # temp-mail.org
+     msg = Message('Hello from the flask mail app!', sender= os.getenv("SECRET_SENDER"), recipients = [os.getenv("SECRET_SENDER")]) # temp-mail.org
      msg.body = "Testing text for the mail body"
      mail.send(msg)
 
