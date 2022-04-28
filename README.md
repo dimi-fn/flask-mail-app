@@ -17,7 +17,7 @@ A simple flask mail server app for sending emails using the [flask-mail](https:/
      * app.config['MAIL_SERVER']
      * app.config['MAIL_PORT']   
 * Run `python app.py` and navigate to localhost:5000
-* If you've followed all steps correctly you should then view a message "*Hello from the flask mail app!*" on localhost:5000, and the respective email on your email own email.
+* If you've followed all steps correctly you should then view a message "*Hello from the flask mail app!*" on localhost:5000, and the email *Testing text for the mail body* on your email inbox.
 
 ## License
 
