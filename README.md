@@ -1,5 +1,7 @@
 # Flask Mail App
 
+[![MIT license](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/mit-license.php)
+
 A simple flask mail server app for sending emails using the [flask-mail](https://pythonhosted.org/Flask-Mail/) extension.
 
 ## Usage
